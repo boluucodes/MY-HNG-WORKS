@@ -7,21 +7,34 @@
     <title>PLAY THE GUESSING GAME</title>
 </head>
 <body>
-  
+   
     <div class="top-box">
-        <h1>THE GUESSING GAME</h1>
+        <h1>THE COLOR GUESSING GAME</h1>
     </div>
 
     <div class="stripe">
-         <button></button>
+         <button class="button" id="reset">New Game</button>
 
          <span id="message">
 
          </span>
 
-         <button class="mode"></button>
-         <button class="mode"></button>
+         <div class="box">
+            
+          <button class="mode">Easy</button>
+          <button class="mode">Hard</button>
+        </div>             
+    </div>    
+
+    <div class="container" id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
-    <script src="game.js"></script>
+
+    <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
