@@ -1,7 +1,30 @@
 body {
-	background-color:  #232323;
+	background-color:  #f5f5f5;
 	margin: 0;
-	font-family: "Montserrat", "Avenir";
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+	font-family: sans-serif;
+}
+
+#colorPreview {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent; /* Will be updated - na you run this one .. sabi boy */
+    transition: background 0.6s ease-in-out;
+}
+/* ADDED THE SCORE AND INSTRUCTIONS DIV  */
+#score,#message{
+	font-size: 1.5rem;
+	color: black;
+}
+#instructions{
+	text-align: center;
+	font-size: 1.5rem;
+	color: steelblue;
 }
 
 .square {

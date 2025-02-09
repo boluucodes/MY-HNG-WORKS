@@ -7,31 +7,35 @@
     <title>THE COLOR GUESSING GAME</title>
 </head>
 <body>
-    <h1 data-testid="gameInstructions">Guess the correct color
-        <br> 
-        <span id="colorDisplay">RGB</span>
-    </h1>
-    
+    <h1>The Color Guessing Game</h1>
+
+    <!-- I Added this for the color to be guessed -->
+    <div id="colorPreview" data-testid="color-preview" aria-label="Target color preview"></div>
+
+    <p id="instructions" data-testid="game-instructions">
+        Guess the correct color from the RGB value displayed below. Click the matching color box to win!
+    </p>
+
+    <h2 id="colorDisplay" data-testid="color-display">RGB(?, ?, ?)</h2>
+
     <div id="stripe">
-        <button id="reset" data-testid="newGameButton">New Colors</button>
-        <span id="message" data-testid="gameStatus"></span>
-        <button id="easyButton">Easy</button>
-        <button id="hardButton"class="selected">Hard</button>
-        
+        <button id="reset" data-testid="reset-button">New Colors</button>
+        <span id="message" data-testid="message"></span>
+        <button id="easyButton" data-testid="easy-mode">Easy</button>
+        <button id="hardButton" class="selected" data-testid="hard-mode">Hard</button>
+        <span id="score" data-testid="score-counter">Score: 0</span>
     </div>
-        <div id="container">
-            <div class="square" data-testid="colorOption"></div>
-            <div class="square" data-testid="colorOption"></div>
-            <div class="square" data-testid="colorOption"></div>
-            <div class="square" data-testid="colorOption"></div>
-            <div class="square" data-testid="colorOption"></div>
-            <div class="square" data-testid="colorOption"></div>
-        </div>
 
-        <div id="score">
-            0
-        </div>
+    <div id="container" data-testid="color-container">
+        <!-- Color Square options -->
+        <div class="square" data-testid="color-square"></div>
+        <div class="square" data-testid="color-square"></div>
+        <div class="square" data-testid="color-square"></div>
+        <div class="square" data-testid="color-square"></div>
+        <div class="square" data-testid="color-square"></div>
+        <div class="square" data-testid="color-square"></div>
+    </div>
 
-        <script src="colorgame.js"></script>
+    <script src="colorgame.js"></script>
 </body>
 </html>
