@@ -99,3 +99,41 @@ button:hover {
 	background: steelblue;
 }
 
+@media screen and (max-width:468px) {
+	.square{
+		
+	}
+	#container{
+		margin: 5% auto;
+	}
+	#message{
+		width: 5%;
+	}
+	#score,#message{
+		font-size: 1.1rem;
+	}
+	#message{
+		width: 20%;
+	}
+	#score{
+		font-size: 1.05em;
+	}
+	
+}
+
+@media screen and (max-width:350px) {
+	#message{
+		font-size: .9rem;
+	}
+	#reset,#easyButton,
+	#hardButton{
+        font-size: .7rem;
+	}
+	#instructions{
+		font-size: 1.1rem;
+	}
+	#score{
+		font-size: 1.05em;
+		padding-left: .3rem;
+	}
+}
