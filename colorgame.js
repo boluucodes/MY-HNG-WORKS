@@ -104,6 +104,6 @@ function init() {
     setupSquares();
     resetGame();
 }
-init(); // To Initialize the game - no be british accent werey
+init(); // To Initialize the game - no be british accent 
 
 // battery wan die
