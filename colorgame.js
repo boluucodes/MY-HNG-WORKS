@@ -75,6 +75,8 @@ for(var i = 0; i < squares.length; i++) {
 		console.log(clickedColor, pickedColor);
 		if(clickedColor === pickedColor){
 			messageDisplay.textContent = "Correct!";
+			let score = document.getElementById("score").textContent;
+			score++;
 			resetButton.textContent = "Play Again?";
 			changeColors(clickedColor);
 			h1.style.background = clickedColor;
@@ -120,3 +122,6 @@ function randomColor(){
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r +", " + g +", " + b +")";
 }
+
+let score = document.getElementById("score").textContent;
+score++;

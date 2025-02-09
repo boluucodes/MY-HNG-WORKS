@@ -7,25 +7,29 @@
     <title>THE COLOR GUESSING GAME</title>
 </head>
 <body>
-    <h1>The Color Guessing Game
+    <h1 data-testid="gameInstructions">Guess the correct color
         <br> 
         <span id="colorDisplay">RGB</span>
     </h1>
     
     <div id="stripe">
-        <button id="reset">New Colors</button>
-        <span id="message"></span>
+        <button id="reset" data-testid="newGameButton">New Colors</button>
+        <span id="message" data-testid="gameStatus"></span>
         <button id="easyButton">Easy</button>
         <button id="hardButton"class="selected">Hard</button>
         
     </div>
         <div id="container">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square" data-testid="colorOption"></div>
+            <div class="square" data-testid="colorOption"></div>
+            <div class="square" data-testid="colorOption"></div>
+            <div class="square" data-testid="colorOption"></div>
+            <div class="square" data-testid="colorOption"></div>
+            <div class="square" data-testid="colorOption"></div>
+        </div>
+
+        <div id="score">
+            0
         </div>
 
         <script src="colorgame.js"></script>
